@@ -116,6 +116,20 @@ dnf install ./linux-Miru-*.rpm
 
 ## **Building and Development**
 
+### Electron version
+Dependencies:
+ - Node 16 or above
+ - PNPM
+
+```bash
+git clone https://github.com/ThaUnknown/miru
+cd miru/electron
+pnpm install
+pnpm run build
+```
+
+---
+### Capacitor (Android) version
 *good luck*
 
 Dependencies:
