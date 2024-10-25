@@ -90,6 +90,13 @@ Unlike qBit's sequential, seeking into undownloaded data will prioritise downloa
 
 ## **Installing on Linux**
 
+### Universal (Flatpak)
+- Follow the steps [here](https://flathub.org/setup) to set up flatpak and flathub if you haven't already.
+- Install [Miru](https://flathub.org/apps/io.github.thaunknown.miru) from a graphical app store or the command line:
+```bash
+flatpak install io.github.thaunknown.miru
+```
+
 ### Universal (AppImage)
 - Download `linux-Miru-version.AppImage` from the [releases](https://github.com/ThaUnknown/miru/releases/latest) page.
 - Run it either directly or with your favorite AppImage manager, such as [GearLever](https://github.com/mijorus/gearlever).
