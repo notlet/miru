@@ -111,7 +111,7 @@ paru -S miru-bin
 - Download `linux-Miru-version.deb` from the [releases](https://github.com/ThaUnknown/miru/releases/latest) page.
 - Install the deb file with package manager.
 ```bash
-apt install linux-Miru-*.deb
+apt install ./linux-Miru-*.deb
 ```
 
 ### Fedora and its derivatives
