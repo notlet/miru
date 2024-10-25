@@ -88,27 +88,30 @@ Unlike qBit's sequential, seeking into undownloaded data will prioritise downloa
 - stream real-time with no waiting for downloads
 - support for custom extensions for custom sources and trackers
 
-## **Linux Installation**
+## **Installing on Linux**
+
+### Universal (AppImage)
+- Download `linux-Miru-version.AppImage` from the [releases](https://github.com/ThaUnknown/miru/releases/latest) page.
+- Run it either directly or with your favorite AppImage manager, such as [GearLever](https://github.com/mijorus/gearlever).
 
 ### Arch
-
-If you use paru:
+- Use your favorite AUR manager to download `miru-bin`. For example:
 ```bash
 paru -S miru-bin
 ```
 
-If you use yay:
-
-```bash
-yay -S miru-bin
-```
-
 ### Debian/Ubuntu
-
-- Download the `linux-Miru-version.deb` from the [releases](https://github.com/ThaUnknown/miru/releases/latest) page.
+- Download `linux-Miru-version.deb` from the [releases](https://github.com/ThaUnknown/miru/releases/latest) page.
 - Install the deb file with package manager.
 ```bash
 apt install linux-Miru-*.deb
+```
+
+### Fedora and its derivatives
+- Download `linux-Miru-version.rpm` from the [releases](https://github.com/ThaUnknown/miru/releases/latest) page.
+- Install the rpm file with package manager.
+```bash
+dnf install ./linux-Miru-*.rpm
 ```
 
 ## **Building and Development**
