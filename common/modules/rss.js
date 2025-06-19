@@ -27,14 +27,13 @@ export function parseRSSNodes (nodes) {
 }
 
 const rssmap = {
-  SubsPlease: settings.value.toshoURL + 'rss2?qx=1&q="[SubsPlease] "',
+  SubsPlease: settings.value.toshoURL + 'rss2?qx=1&q="[SubsPlease]%20""(1080p)"',
   'Erai-raws [Multi-Sub]': settings.value.toshoURL + 'rss2?qx=1&q="[Erai-raws] "',
   'Yameii [Dubbed]': settings.value.toshoURL + 'rss2?qx=1&q="[Yameii] "',
   'Judas [Small Size]': settings.value.toshoURL + 'rss2?qx=1&q="[Judas] "'
 }
 export function getReleasesRSSurl (val) {
-  const rss = rssmap[val] || val
-  return rss && new URL(rssmap[val] ? `${rss}${settings.value.rssQuality ? `"${settings.value.rssQuality}"` : ''}` : rss)
+  return (rssmap[val] || val) && new URL(rssmap[val] || val)
 }
 
 export async function getRSSContent (url) {
@@ -75,7 +74,7 @@ class RSSMediaManager {
 
     if (!content) return false
 
-    const pubDate = +(new Date(content.querySelector('pubDate').textContent)) * page * perPage
+    const pubDate = +(new Date(content.querySelector('pubDate')?.textContent || Date.now())) * page * perPage
     if (this.resultMap[url]?.date === pubDate) return false
     return { content, pubDate }
   }
