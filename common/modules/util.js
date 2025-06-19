@@ -151,7 +151,7 @@ export const defaults = {
   torrentPathNew: undefined,
   font: undefined,
   angle: 'default',
-  toshoURL: SUPPORTS.extensions ? decodeURIComponent(atob('aHR0cHM6Ly9mZWVkLmFuaW1ldG9zaG8ub3JnLw==')) : '',
+  toshoURL: SUPPORTS.extensions ? decodeURIComponent(atob('aHR0cHM6Ly9zdWJzcGxlYXNlLm9yZy9yc3MvP3I9MTA4MA==')) : '',
   extensions: SUPPORTS.extensions ? ['anisearch'] : [],
   sources: {},
   enableExternal: false,
