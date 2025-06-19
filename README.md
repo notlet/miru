@@ -1,3 +1,5 @@
+<h3>This is an archival version of Miru before its rebrand to Hayase for preservation purposes.</h3>
+
 <p align="center">
 	<a href="https://github.com/ThaUnknown/miru">
 		<img src="./web/static/logo_filled.svg" width="200">
@@ -23,6 +25,7 @@
     <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/ThaUnknown/miru/total?style=flat-square">
   </a>
 </p>
+
 
 ## **About**
 A pure JS BitTorrent streaming environment, with a built-in list manager. Imagine qBit + Taiga + MPV, all in a single package, but streamed real-time. Completly ad free with no tracking/data collection.
